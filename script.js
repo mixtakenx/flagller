@@ -6,13 +6,13 @@ function checkFlag() {
 
 	// Check if the user's input matches the colors of any country flags
 	if (colors.length == 3 && colors[0] == "red" && colors[1] == "white" && colors[2] == "blue") {
-		flagOutput.innerHTML = '<img src="flag_usa.png" alt="United States Flag">';
+		flagOutput.innerHTML = '<img src="images/flag_usa.png" alt="United States Flag">';
 		correctFlag = true;
 	} else if (colors.length == 3 && colors[0] == "red" && colors[1] == "white" && colors[2] == "red") {
-		flagOutput.innerHTML = '<img src="flag_spain.png" alt="Spanish Flag">';
+		flagOutput.innerHTML = '<img src="images/flag_spain.png" alt="Spanish Flag">';
 		correctFlag = true;
 	} else if (colors.length == 3 && colors[0] == "green" && colors[1] == "white" && colors[2] == "red") {
-		flagOutput.innerHTML = '<img src="flag_france.png" alt="French Flag">';
+		flagOutput.innerHTML = '<img src="images/flag_france.png" alt="French Flag">';
 		correctFlag = true;
 	} else {
 		flagOutput.innerHTML = "Sorry, that's not correct. Try again!";
