@@ -1,11 +1,25 @@
-function displayFlag() {
-    var colorInput = document.getElementById("colorInput").value;
-    var colors = colorInput.split(",");
-    var flagHTML = "";
+function checkFlag() {
+	var input = document.getElementById("colorInput").value;
+	var colors = input.split(",");
+	var flagOutput = document.getElementById("flagOutput");
+	var correctFlag = false;
 
-    for (var i = 0; i < colors.length; i++) {
-        flagHTML += `<div style="width: 100%; height: 100%; background-color: ${colors[i].trim()};"></div>`;
-    }
+	// Check if the user's input matches the colors of any country flags
+	if (colors.length == 3 && colors[0] == "red" && colors[1] == "white" && colors[2] == "blue") {
+		flagOutput.innerHTML = '<img src="flag_usa.png" alt="United States Flag">';
+		correctFlag = true;
+	} else if (colors.length == 3 && colors[0] == "red" && colors[1] == "white" && colors[2] == "red") {
+		flagOutput.innerHTML = '<img src="flag_spain.png" alt="Spanish Flag">';
+		correctFlag = true;
+	} else if (colors.length == 3 && colors[0] == "green" && colors[1] == "white" && colors[2] == "red") {
+		flagOutput.innerHTML = '<img src="flag_france.png" alt="French Flag">';
+		correctFlag = true;
+	} else {
+		flagOutput.innerHTML = "Sorry, that's not correct. Try again!";
+	}
 
-    document.getElementById("flag").innerHTML = flagHTML;
+	// Display a message if the user's guess is correct
+	if (correctFlag) {
+		alert("Congratulations, that's correct!");
+	}
 }
