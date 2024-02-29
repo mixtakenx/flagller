@@ -20,7 +20,7 @@ function checkFlag() {
 	} else if (colors.length == 3 && colors[0] == "red" && colors[1] == "white" 
 		flagOutput.innerHTML = '<img src="images/Flag_of_Indonesia.png" alt="Indonesia">';
 		correctFlag = true;
-	} else if (colors.length == 3 && colors[0] == "red" && colors[1] == "white" 
+} else if (colors.length == 3 && colors[0] == "red" && colors[1] == "white" 
 		flagOutput.innerHTML = '<img src="images/flag_of_singapore.png" alt="Singapore">';
 		correctFlag = true;
 } else if (colors.length == 3 && colors[0] == "blue" && colors[1] == "white" && colors[2] == "red") {
