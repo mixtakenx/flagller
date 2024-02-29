@@ -30,7 +30,10 @@ function checkFlag() {
 		flagOutput.innerHTML = '<img src="images/flag_of_Papua_New_Guinea.png" alt="Papua New Guinea">';
 		correctFlag = true;
 } else if (colors.length == 3 && colors[0] == "blue" && colors[1] == "yellow" && colors[2] == "red") && colors[2] == "white") {
-		flagOutput.innerHTML = '<img src="images/Flag_of_Malaysia.png" alt="Malaysia">';
+		flagOutput.innerHTML = '<img src="images/Flag_of_Malaysia.png.webp" alt="Malaysia">';
+		correctFlag = true;
+} else if (colors.length == 3 && colors[0] == "yellow" && colors[1] == "white" && colors[2] == "blue") && colors[2] == "red") {
+		flagOutput.innerHTML = '<img src="images/Flag_of_the_Philippines.png" alt="Philippine">';
 		correctFlag = true;
 	} else {
 		flagOutput.innerHTML = "Sorry, that's not correct. Try again!";
