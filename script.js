@@ -17,6 +17,9 @@ function checkFlag() {
 	} else if (colors.length == 3 && colors[0] == "blue" && colors[1] == "white" && colors[2] == "red") {
 		flagOutput.innerHTML = '<img src="images/flag_australia.png" alt="Australia">';
 		correctFlag = true;
+	} else if (colors.length == 3 && colors[0] == "red" && colors[1] == "white" 
+		flagOutput.innerHTML = '<img src="images/flag_indonesia.png" alt="Indonesia">';
+		correctFlag = true;
 	} else {
 		flagOutput.innerHTML = "Sorry, that's not correct. Try again!";
 	}
