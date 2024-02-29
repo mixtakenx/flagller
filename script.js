@@ -38,6 +38,9 @@ function checkFlag() {
 } else if (colors.length == 3 && colors[0] == "red" && colors[1] == "yellow" 
 		flagOutput.innerHTML = '<img src="images/Flag_of_Vietnam.png" alt="Vietnam">';
 		correctFlag = true;
+} else if (colors.length == 3 && colors[0] == "blue" && colors[1] == "red" && colors[2] == "white") {
+		flagOutput.innerHTML = '<img src="images/Flag_of_Cambodia.png" alt="Cambodia ">';
+		correctFlag = true;
 	} else {
 		flagOutput.innerHTML = "Sorry, that's not correct. Try again!";
 	}
