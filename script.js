@@ -35,6 +35,9 @@ function checkFlag() {
 } else if (colors.length == 3 && colors[0] == "yellow" && colors[1] == "white" && colors[2] == "blue") && colors[2] == "red") {
 		flagOutput.innerHTML = '<img src="images/Flag_of_the_Philippines.png" alt="Philippine">';
 		correctFlag = true;
+} else if (colors.length == 3 && colors[0] == "red" && colors[1] == "yellow" 
+		flagOutput.innerHTML = '<img src="images/Flag_of_Vietnam.png" alt="Vietnam">';
+		correctFlag = true;
 	} else {
 		flagOutput.innerHTML = "Sorry, that's not correct. Try again!";
 	}
