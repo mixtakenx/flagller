@@ -24,7 +24,10 @@ function checkFlag() {
 		flagOutput.innerHTML = '<img src="images/flag_of_singapore.png" alt="Singapore">';
 		correctFlag = true;
 } else if (colors.length == 3 && colors[0] == "blue" && colors[1] == "white" && colors[2] == "red") {
-		flagOutput.innerHTML = '<img src="images/1280px-Flag_of_Australia.svg.png" alt="New Zealand">';
+		flagOutput.innerHTML = '<img src="images/flag_of_New_Zealand.png" alt="New Zealand">';
+		correctFlag = true;
+} else if (colors.length == 3 && colors[0] == "white" && colors[1] == "black" && colors[2] == "red") && colors[2] == "yellow") {
+		flagOutput.innerHTML = '<img src="images/flag_of_Papua_New_Guinea.png" alt="Papua New Guinea">';
 		correctFlag = true;
 	} else {
 		flagOutput.innerHTML = "Sorry, that's not correct. Try again!";
