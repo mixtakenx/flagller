@@ -29,6 +29,9 @@ function checkFlag() {
 } else if (colors.length == 3 && colors[0] == "white" && colors[1] == "black" && colors[2] == "red") && colors[2] == "yellow") {
 		flagOutput.innerHTML = '<img src="images/flag_of_Papua_New_Guinea.png" alt="Papua New Guinea">';
 		correctFlag = true;
+} else if (colors.length == 3 && colors[0] == "blue" && colors[1] == "yellow" && colors[2] == "red") && colors[2] == "white") {
+		flagOutput.innerHTML = '<img src="images/Flag_of_Malaysia.png" alt="Malaysia">';
+		correctFlag = true;
 	} else {
 		flagOutput.innerHTML = "Sorry, that's not correct. Try again!";
 	}
